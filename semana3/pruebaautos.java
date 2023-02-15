@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class pruebaautos {
     public static void main(String[] args) {
         Scanner keyboard=new Scanner(System.in);
-        cars car1=new cars();
+        Cars car1=new Cars();
         System.out.println("digite la marca del auto: ");
         car1.setMarca(keyboard.nextLine());
         System.out.println("digite la linea del auto: ");
@@ -22,5 +22,9 @@ public class pruebaautos {
         */
         System.out.println(car1.toString());
         
+        Cars car2=new Cars("renault","Sanderos",2015,12.3,39);
+
+        System.out.println(car2.toString());
+
     }
 }
