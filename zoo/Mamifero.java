@@ -1,26 +1,22 @@
-public abstract class Mamifero {
-   private String nomComun,genero,especie,tipo;
+public abstract class Mamifero extends Animal {
+private int tiempoGestacion;
 
-public Mamifero(String nc, String gen, String esp) {
-    this.nomComun = nc;
-    this.genero = gen;
-    this.especie = esp;
+public Mamifero() {
 }
 
 
 
-public String getTipo() {
-    return tipo;
+public int getTiempoGestacion() {
+    return tiempoGestacion;
 }
 
-public void setTipo(String tipo) {
-    this.tipo = tipo;
+public void setTiempoGestacion(int tiempoGestacion) {
+    this.tiempoGestacion = tiempoGestacion;
 }
 
-public abstract void horarioAlimentacion(String hora);
- 
 @Override
-public String toString() {
-    return "Mamifero nomComun=" + nomComun + ", genero=" + genero + ", especie=" + especie + "]";
+public String info() {
+    return null;
 }
+    
 }
